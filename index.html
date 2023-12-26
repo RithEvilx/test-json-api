@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var products = [
+      {
+        id: 1,
+        title: "Zenith Elite Chronograph",
+        description: "Classic elegance meets modern precision with a stainless steel case and sophisticated chronograph movement.",
+        price: 279.99,
+        rating: 4.7,
+        stock: 50,
+        images: "https://klassywatches.com/cdn/shop/products/GleamFront_800x.png?v=1646902180",
+      },
+      {
+        id: 2,
+        title: "Inferno X1 Limited Edition",
+        description: "Unleash the fiery spirit with a bold red dial, carbon fiber accents, and a robust titanium case.",
+        price: 239.99,
+        rating: 4.9,
+        stock: 30,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_dbf77d67-4d7d-477f-8020-217d3b5385be_grande.png?v=1657131387",
+      },
+      {
+        id: 3,
+        title: "Zephyr Horizon Dive Master",
+        description: "Dive into luxury with helium escape valve, ceramic bezel, and luminous markers for underwater exploration.",
+        price: 299.99,
+        rating: 4.5,
+        stock: 40,
+        images: "https://zinvowatches.com/cdn/shop/products/front_b8245bb2-f623-42e6-b358-2857f32fd172.png?v=1656983235",
+      },
+      {
+        id: 4,
+        title: "Aurora Nebula Tourbillon",
+        description: "Experience the mesmerizing beauty of a celestial-inspired dial, a tourbillon movement, and a rose gold case.",
+        price: 349.99,
+        rating: 4.8,
+        stock: 15,
+        images: "https://zinvowatches.com/cdn/shop/products/front_83b1befc-3935-44ef-8fbf-9ec719c8d4e7.png?v=1656984869",
+      },
+      {
+        id: 5,
+        title: "Lunar Eclipse Moonphase",
+        description: "Embrace the allure of the night sky with a sleek stainless steel design and moonphase complication.",
+        price: 2800,
+        rating: 4.6,
+        stock: 60,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_92299c10-08dd-4503-97b6-02c20da89342.png?v=1656988867",
+      },
+      {
+        id: 6,
+        title: "Spectra Pulse Dual-Time",
+        description: "Stay connected across time zones with dual-time complication, stainless steel bracelet, and modern design.",
+        price: 119.99,
+        rating: 4.5,
+        stock: 25,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_e21df16c-6fd3-42f7-b845-dae57e47f5e1.png?v=1656989070",
+      },
+      {
+        id: 7,
+        title: "Quasar Constellation Automatic",
+        description: "Navigate the cosmos of style with a distinctive starry dial, automatic movement, and stainless steel case.",
+        price: 369.99,
+        rating: 4.7,
+        stock: 35,
+        images: "https://zinvo-dev.steand.me/cdn/shop/products/PhantomFront2019-1_1.jpg?v=1552815381",
+      },
+      {
+        id: 8,
+        title: "Eclipse Titan Solar Power",
+        description: "Harness the power of the sun with an eco-friendly design featuring solar-powered movement and titanium case.",
+        price: 134.99,
+        rating: 4.6,
+        stock: 45,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_122dfc45-930b-4e39-bad2-c57cbd7bdda9.png?v=1656564372",
+      },
+      {
+        id: 9,
+        title: "Rapidus Velocity Racing Edition",
+        description: "Unleash your need for speed with a racing-inspired watch featuring tachymeter bezel and carbon fiber elements.",
+        price: 329.99,
+        rating: 4.8,
+        stock: 20,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_e21df16c-6fd3-42f7-b845-dae57e47f5e1_2048x2048.png?v=1656989070",
+      },
+      {
+        id: 10,
+        title: "Aether Sky Flyback Chronograph",
+        description: "Soar through time with an aviation-inspired watch featuring flyback chronograph complication and a blue sunburst dial.",
+        price: 289.99,
+        rating: 4.9,
+        stock: 18,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_6d9d5e5c-b5a0-426a-be01-1127825ec87c.png?v=1656563080",
+      },
+      {
+        id: 11,
+        title: "Vortex Explorer GMT",
+        description: "Conquer new horizons with a watch designed for explorers, featuring GMT complication and a durable design.",
+        price: 124.99,
+        rating: 4.7,
+        stock: 30,
+        images: "https://zinvowatches.com/cdn/shop/products/panda1_3f44f608-5235-4814-8a41-890bb81f476c.jpg?v=1626387860",
+      },
+      {
+        id: 12,
+        title: "Phoenix Rebirth Limited Edition",
+        description: "Rise from the ashes of ordinary timepieces with an exclusive watch featuring hand-engraved dial and tourbillon movement.",
+        price: 139.99,
+        rating: 4.9,
+        stock: 15,
+        images: "https://zinvowatches.com/cdn/shop/products/Front_aa53efe5-e9a7-4d4f-94b3-a82fae279611.png?v=1656987490",
+      },
+      {
+        id: 13,
+        title: "Solstice Titan Luminous",
+        description: "Illuminate your path with a watch featuring a luminous dial, titanium case, and a sleek design for any light condition.",
+        price: 279.99,
+        rating: 4.6,
+        stock: 40,
+        images: "https://thewatch-cambodia.com/cdn/shop/products/BladeOnyxFront_1_600x_6b9d1c09-6b09-4717-aafb-345c252b4dc8.jpg?v=1517290308",
+      },
+      {
+        id: 14,
+        title: "Chronos Avant-Garde Skeleton",
+        description: "Witness the art of timekeeping with a skeletonized dial, revealing intricate movements within a stainless steel case.",
+        price: 119.99,
+        rating: 4.8,
+        stock: 22,
+        images: "https://klassywatches.com/cdn/shop/products/CobraGold_After_800x.png?v=1646110455",
+      },
+      {
+        id: 15,
+        title: "Astral Voyager Automatic",
+        description: "Embark on a journey through the stars with a celestial-inspired dial, an automatic movement, and a stainless steel bracelet.",
+        price: 379.99,
+        rating: 4.7,
+        stock: 28,
+        images: "https://klassywatches.com/cdn/shop/files/1_3_800x.png?v=1694110929",
+      },
+      {
+        id: 16,
+        title: "Titanium Zenith Horizon",
+        description: "Reach new heights with a watch crafted from lightweight titanium, combining durability with a modern design.",
+        price: 114.99,
+        rating: 4.6,
+        stock: 38,
+        images: "https://klassywatches.com/cdn/shop/products/Rainbow01_800x.png?v=1632984247",
+      },
+      {
+        id: 17,
+        title: "Nebula Nova Starlight",
+        description: "Illuminate your wrist with a dazzling starry dial, rose gold case, and a diamond-studded bezel for ultimate luxury.",
+        price: 214.99,
+        rating: 4.8,
+        stock: 24,
+        images: "https://klassywatches.com/cdn/shop/products/s6_2__After3_800x.png?v=1649874629",
+      },
+      {
+        id: 18,
+        title: "Quantum Precision Masterpiece",
+        description: "Experience the epitome of precision with a watch boasting a tourbillon movement, perpetual calendar, and a platinum case.",
+        price: 324.99,
+        rating: 4.9,
+        stock: 12,
+        images: "https://klassywatches.com/cdn/shop/products/Q-4put_2_800x.png?v=1676005233",
+      },
+      {
+        id: 19,
+        title: "Cerulean Sea Marine Chronometer",
+        description: "Navigate the Cerulean Sea with a nautical-inspired watch featuring a marine blue dial, chronometer-certified movement, and stainless steel case.",
+        price: 124.99,
+        rating: 4.7,
+        stock: 32,
+        images: "https://klassywatches.com/cdn/shop/files/Purple1_800x.png?v=1691511900",
+      },
+      {
+        id: 20,
+        title: "Galactic Fusion Limited Edition",
+        description: "Immerse yourself in an exclusive fusion of materials, including meteorite accents and a tourbillon movement.",
+        price: 239.99,
+        rating: 4.8,
+        stock: 20,
+        images: "https://klassywatches.com/cdn/shop/files/Green1_d668f0c9-b088-4685-8b0e-2aed5052337b_800x.png?v=1691511917",
+      }
+    ];
+
+    // Convert the product object to a JSON string
+    var productsJson = JSON.stringify(products);
+    console.log(productsJson)
+
+  </script>
+</body>
+
+</html>
